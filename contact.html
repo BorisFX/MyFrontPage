@@ -46,6 +46,7 @@
                         </div>
                         <input type="hidden" name="_subject" value="Новое сообщение с сайта oleg.sbs">
                         <input type="text" name="_gotcha" style="display:none">
+                        <input type="hidden" name="_next" value="https://oleg.sbs/thanks.html">
                         <button type="submit" class="submit-button">Send Message</button>
                     </form>
                 </section>
@@ -54,8 +55,21 @@
     </div>
     
     <script>
-        // Здесь скрипт уже не нужен, так как Formspree обрабатывает отправку
-        // Но можно добавить код для дополнительной валидации формы при желании
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('feedbackForm');
+            
+            form.addEventListener('submit', function() {
+                const userLang = navigator.language || navigator.userLanguage;
+                const isRussian = userLang.startsWith('ru');
+                
+                const nextField = this.querySelector('input[name="_next"]');
+                
+                if (nextField) {
+                    const lang = isRussian ? 'ru' : 'en';
+                    nextField.value = `https://oleg.sbs/thanks.html?lang=${lang}`;
+                }
+            });
+        });
     </script>
 </body>
 </html> 
