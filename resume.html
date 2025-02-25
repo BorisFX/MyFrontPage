@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Oleg Matyakubov</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="top-header">
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <h1 id="page-title">CV</h1>
+            <div class="top-navigation">
+                <a href="login.html" class="nav-button">Login</a>
+                <a href="contact.html" class="nav-button">Contact</a>
+            </div>
+            <div class="language-switcher">
+                <button id="ru-btn" class="lang-btn">RUS</button>
+                <button id="en-btn" class="lang-btn active">ENG</button>
+            </div>
+        </header>
+        
+        <main class="resume">
+            <!-- Русская версия резюме -->
+            <div id="ru-resume" class="resume-content">
+                <section class="resume-section">
+                    <h2>Матякубов Олег</h2>
+                    <h3>Senior .NET Разработчик</h3>
+                    <p class="resume-subtitle">Мужчина, 38 лет, родился 3 февраля 1987</p>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Профессиональные навыки</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Языки программирования</h3>
+                            <ul class="skills-list">
+                                <li>C#</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>TypeScript</li>
+                                <li>Go (Golang)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Фреймворки</h3>
+                            <ul class="skills-list">
+                                <li>.NET Framework</li>
+                                <li>.NET 5/6/7/8/9</li>
+                                <li>ASP.NET Core</li>
+                                <li>Entity Framework Core</li>
+                                <li>AngularJS</li>
+                                <li>React</li>
+                                <li>MVC</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Базы данных</h3>
+                            <ul class="skills-list">
+                                <li>MS SQL</li>
+                                <li>PostgreSQL</li>
+                                <li>Oracle</li>
+                                <li>MongoDB</li>
+                                <li>ClickHouse</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Паттерны</h3>
+                            <ul class="skills-list">
+                                <li>CQRS</li>
+                                <li>DDD</li>
+                                <li>Event Sourcing</li>
+                                <li>Repository</li>
+                                <li>Unit of Work</li>
+                                <li>Factory</li>
+                                <li>Mediator</li>
+                                <li>Observer</li>
+                                <li>Strategy</li>
+                                <li>Singleton</li>
+                                <li>Adapter</li>
+                                <li>Decorator</li>
+                                <li>Proxy</li>
+                                <li>State</li>
+                                <li>Composite</li>
+                                <li>Chain of Responsibility</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Облачные платформы</h3>
+                            <ul class="skills-list">
+                                <li>AWS (EC2, S3, Lambda, CloudFront)</li>
+                                <li>Azure (App Services, Blob Storage, Functions)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Инфраструктура</h3>
+                            <ul class="skills-list">
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>CI/CD</li>
+                                <li>Terraform</li>
+                                <li>Jenkins</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Технологии</h3>
+                            <ul class="skills-list">
+                                <li>LINQ</li>
+                                <li>Blockchain (Ethereum, Bitcoin)</li>
+                                <li>RESTful APIs</li>
+                                <li>gRPC</li>
+                                <li>GraphQL</li>
+                                <li>SignalR</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Инструменты</h3>
+                            <ul class="skills-list">
+                                <li>Git</li>
+                                <li>RabbitMQ</li>
+                                <li>Kafka</li>
+                                <li>Redis</li>
+                                <li>Elasticsearch</li>
+                                <li>Prometheus</li>
+                                <li>Grafana</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Тестирование</h3>
+                            <ul class="skills-list">
+                                <li>Unit Testing (xUnit, NUnit, MSTest)</li>
+                                <li>Integration Testing</li>
+                                <li>TDD</li>
+                                <li>BDD (SpecFlow)</li>
+                                <li>Mocking (Moq, NSubstitute)</li>
+                                <li>Test Automation</li>
+                                <li>Performance Testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Опыт работы (7+ лет)</h2>
+                    
+                    <div class="job">
+                        <h3>Главный разработчик</h3>
+                        <div class="job-info">
+                            <p class="company">Forebit</p>
+                            <p class="period">Сентябрь 2023 — настоящее время</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Разработка криптокошелька и блокчейн-решений</li>
+                            <li>Работа с различными блокчейнами (Ethereum, Bitcoin, Solana)</li>
+                            <li>Архитектурное проектирование и техническое руководство</li>
+                            <li>Оптимизация производительности высоконагруженных систем</li>
+                            <li>Разработка на .NET 8/.NET 9 с применением CQRS, Event Sourcing</li>
+                            <li>Создание микросервисов на Go для интеграции с внешними API</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>Ведущий разработчик .NET</h3>
+                        <div class="job-info">
+                            <p class="company">Moscow Credit Bank</p>
+                            <p class="period">Август 2022 — Август 2023</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>.NET 6/7/8, CQRS/DDD, Микросервисная архитектура</li>
+                            <li>Работа с базами данных: Oracle, PostgreSQL, ClickHouse</li>
+                            <li>Внедрение паттернов Mediator, Observer, Strategy</li>
+                            <li>Автоматизация CI/CD с Azure DevOps</li>
+                            <li>Юнит-тестирование</li>
+                            <li>Работа с брокерами сообщений (RabbitMQ, Kafka)</li>
+                            <li>Самостоятельное развертывание инфраструктуры с Docker</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>.NET Engineer</h3>
+                        <div class="job-info">
+                            <p class="company">Ubikiri</p>
+                            <p class="period">Октябрь 2021 — Август 2023</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>.NET 5/6/7, CQRS/DDD, Angular, Kubernetes</li>
+                            <li>Микросервисная архитектура</li>
+                            <li>Разработка криптокошелька</li>
+                            <li>Разработка системы нотариального заверения файлов на основе блокчейна</li>
+                            <li>Развертывание на AWS с использованием Lambda, S3, EC2</li>
+                            <li>Применение паттернов проектирования: Adapter, Decorator, Proxy</li>
+                            <li>Техническое руководство проектами</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>.NET Developer</h3>
+                        <div class="job-info">
+                            <p class="company">Intrigma</p>
+                            <p class="period">Сентябрь 2019 — Декабрь 2021</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Разработка бэкенд и фронтенд ПО с использованием .NET 4.7/5</li>
+                            <li>Поддержка инфраструктуры, настройка развертывания</li>
+                            <li>Написание модульных тестов</li>
+                            <li>Интеграция с Azure для облачного хранения и аналитики</li>
+                            <li>Контейнеризация приложений с Docker</li>
+                            <li>Agile процесс</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>.NET Developer</h3>
+                        <div class="job-info">
+                            <p class="company">FriendWork Recruiter</p>
+                            <p class="period">Декабрь 2017 — Ноябрь 2019</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Разработка бэкенда и фронтенда с использованием C#, Web API, ASP MVC и JS</li>
+                            <li>Поддержка инфраструктуры, конфигурация развертывания, разработка новых функций</li>
+                            <li>Внедрение паттернов State, Composite, Chain of Responsibility</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Персональные проекты (последние 6 месяцев)</h2>
+                    <ul class="personal-projects">
+                        <li>Разработка персонального ИИ-ассистента с использованием .NET 8</li>
+                        <li>Создание медицинского ИИ-консультанта с развертыванием на AWS</li>
+                        <li>Исследование и интеграция современных LLM</li>
+                        <li>Построение аналитической платформы с использованием ClickHouse</li>
+                        <li>Создание утилит для обработки данных на Go</li>
+                        <li>Разработка микросервиса для мониторинга блокчейн-транзакций на Go</li>
+                    </ul>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Образование</h2>
+                    <div class="education">
+                        <h3>Санкт-Петербургский национальный исследовательский университет информационных технологий, механики и оптики</h3>
+                        <p class="university">Программное обеспечение и автоматизированные системы</p>
+                        <p class="period">2016</p>
+                    </div>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Языки</h2>
+                    <ul class="languages-list">
+                        <li>Русский: Родной</li>
+                        <li>Английский: B1 (Средний)</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <!-- Английская версия резюме -->
+            <div id="en-resume" class="resume-content active">
+                <section class="resume-section">
+                    <h2>Oleg Matyakubov</h2>
+                    <h3>Senior .NET Developer</h3>
+                    <p class="resume-subtitle">Male, 38 years old, born February 3, 1987</p>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Technical Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul class="skills-list">
+                                <li>C#</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>TypeScript</li>
+                                <li>Go (Golang)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Frameworks</h3>
+                            <ul class="skills-list">
+                                <li>.NET Framework</li>
+                                <li>.NET 5/6/7/8/9</li>
+                                <li>ASP.NET Core</li>
+                                <li>Entity Framework Core</li>
+                                <li>AngularJS</li>
+                                <li>React</li>
+                                <li>MVC</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Databases</h3>
+                            <ul class="skills-list">
+                                <li>MS SQL</li>
+                                <li>PostgreSQL</li>
+                                <li>Oracle</li>
+                                <li>MongoDB</li>
+                                <li>ClickHouse</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Patterns</h3>
+                            <ul class="skills-list">
+                                <li>CQRS</li>
+                                <li>DDD</li>
+                                <li>Event Sourcing</li>
+                                <li>Repository</li>
+                                <li>Unit of Work</li>
+                                <li>Factory</li>
+                                <li>Mediator</li>
+                                <li>Observer</li>
+                                <li>Strategy</li>
+                                <li>Singleton</li>
+                                <li>Adapter</li>
+                                <li>Decorator</li>
+                                <li>Proxy</li>
+                                <li>State</li>
+                                <li>Composite</li>
+                                <li>Chain of Responsibility</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Cloud Platforms</h3>
+                            <ul class="skills-list">
+                                <li>AWS (EC2, S3, Lambda, CloudFront)</li>
+                                <li>Azure (App Services, Blob Storage, Functions)</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Infrastructure</h3>
+                            <ul class="skills-list">
+                                <li>Docker</li>
+                                <li>Kubernetes</li>
+                                <li>CI/CD</li>
+                                <li>Terraform</li>
+                                <li>Jenkins</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Technologies</h3>
+                            <ul class="skills-list">
+                                <li>LINQ</li>
+                                <li>Blockchain (Ethereum, Bitcoin)</li>
+                                <li>RESTful APIs</li>
+                                <li>gRPC</li>
+                                <li>GraphQL</li>
+                                <li>SignalR</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools</h3>
+                            <ul class="skills-list">
+                                <li>Git</li>
+                                <li>RabbitMQ</li>
+                                <li>Kafka</li>
+                                <li>Redis</li>
+                                <li>Elasticsearch</li>
+                                <li>Prometheus</li>
+                                <li>Grafana</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Testing</h3>
+                            <ul class="skills-list">
+                                <li>Unit Testing (xUnit, NUnit, MSTest)</li>
+                                <li>Integration Testing</li>
+                                <li>TDD</li>
+                                <li>BDD (SpecFlow)</li>
+                                <li>Mocking (Moq, NSubstitute)</li>
+                                <li>Test Automation</li>
+                                <li>Performance Testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Work Experience (7+ years)</h2>
+                    
+                    <div class="job">
+                        <h3>Lead Developer</h3>
+                        <div class="job-info">
+                            <p class="company">Forebit</p>
+                            <p class="period">September 2023 — Present</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Development of cryptocurrency wallet and blockchain solutions</li>
+                            <li>Working with various blockchain platforms (Ethereum, Bitcoin, Solana)</li>
+                            <li>Architectural design and technical leadership</li>
+                            <li>Performance optimization of high-load systems</li>
+                            <li>Development with .NET 8/.NET 9 using CQRS, Event Sourcing</li>
+                            <li>Creating microservices with Go for external API integration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>Lead .NET Developer</h3>
+                        <div class="job-info">
+                            <p class="company">Moscow Credit Bank</p>
+                            <p class="period">August 2022 — August 2023</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>.NET 6/7/8, CQRS/DDD, Microservice architecture</li>
+                            <li>Working with databases: Oracle, PostgreSQL, ClickHouse</li>
+                            <li>Implementation of Mediator, Observer, Strategy patterns</li>
+                            <li>CI/CD automation with Azure DevOps</li>
+                            <li>Unit testing</li>
+                            <li>Working with message brokers (RabbitMQ, Kafka)</li>
+                            <li>Infrastructure deployment with Docker</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>.NET Engineer</h3>
+                        <div class="job-info">
+                            <p class="company">Ubikiri</p>
+                            <p class="period">October 2021 — August 2023</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>.NET 5/6/7, CQRS/DDD, Angular, Kubernetes</li>
+                            <li>Microservice architecture</li>
+                            <li>Cryptocurrency wallet development</li>
+                            <li>Blockchain-based notary system for files</li>
+                            <li>Deployment on AWS using Lambda, S3, EC2</li>
+                            <li>Implementation of design patterns: Adapter, Decorator, Proxy</li>
+                            <li>Technical project leadership</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>.NET Developer</h3>
+                        <div class="job-info">
+                            <p class="company">Intrigma</p>
+                            <p class="period">September 2019 — December 2021</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Backend and frontend development with .NET 4.7/5</li>
+                            <li>Infrastructure support, deployment configuration</li>
+                            <li>Unit testing</li>
+                            <li>Azure integration for cloud storage and analytics</li>
+                            <li>Application containerization with Docker</li>
+                            <li>Agile process</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job">
+                        <h3>.NET Developer</h3>
+                        <div class="job-info">
+                            <p class="company">FriendWork Recruiter</p>
+                            <p class="period">December 2017 — November 2019</p>
+                        </div>
+                        <ul class="responsibilities">
+                            <li>Backend and frontend development with C#, Web API, ASP MVC and JS</li>
+                            <li>Infrastructure support, deployment configuration, new feature development</li>
+                            <li>Implementation of State, Composite, Chain of Responsibility patterns</li>
+                        </ul>
+                    </div>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Personal Projects (Last 6 months)</h2>
+                    <ul class="personal-projects">
+                        <li>Development of personal AI assistant using .NET 8</li>
+                        <li>Creation of AI medical consultant deployed on AWS</li>
+                        <li>Research and integration of modern LLMs</li>
+                        <li>Building an analytics platform with ClickHouse</li>
+                        <li>Creating data processing utilities with Go</li>
+                        <li>Development of microservice for blockchain transaction monitoring using Go</li>
+                    </ul>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Education</h2>
+                    <div class="education">
+                        <h3>St. Petersburg National Research University of Information Technologies, Mechanics and Optics</h3>
+                        <p class="university">Computer software and automated systems</p>
+                        <p class="period">2016</p>
+                    </div>
+                </section>
+                
+                <section class="resume-section">
+                    <h2>Languages</h2>
+                    <ul class="languages-list">
+                        <li>Russian: Native</li>
+                        <li>English: B1 (Intermediate)</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // Переключение языков
+        document.addEventListener('DOMContentLoaded', function() {
+            const ruBtn = document.getElementById('ru-btn');
+            const enBtn = document.getElementById('en-btn');
+            const ruResume = document.getElementById('ru-resume');
+            const enResume = document.getElementById('en-resume');
+            const pageTitle = document.getElementById('page-title');
+            
+            ruBtn.addEventListener('click', function() {
+                // Активация русского резюме
+                ruBtn.classList.add('active');
+                enBtn.classList.remove('active');
+                ruResume.classList.add('active');
+                enResume.classList.remove('active');
+                pageTitle.textContent = 'Резюме';
+                document.documentElement.lang = 'ru';
+            });
+            
+            enBtn.addEventListener('click', function() {
+                // Активация английского резюме
+                enBtn.classList.add('active');
+                ruBtn.classList.remove('active');
+                enResume.classList.add('active');
+                ruResume.classList.remove('active');
+                pageTitle.textContent = 'CV';
+                document.documentElement.lang = 'en';
+            });
+            
+            // Выпадающие списки навыков
+            const skillCategories = document.querySelectorAll('.skill-category h3');
+            
+            skillCategories.forEach(category => {
+                category.addEventListener('click', function() {
+                    const parent = this.parentElement;
+                    
+                    // Переключаем активное состояние текущей категории
+                    this.classList.toggle('active');
+                    parent.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

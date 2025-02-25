@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Oleg Matyakubov</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-button">← Back to Home</a>
+            <div class="navigation">
+                <a href="resume.html" class="nav-button">CV</a>
+                <a href="contact.html" class="nav-button">Contact</a>
+            </div>
+            <h1>Dashboard Login</h1>
+        </header>
+        
+        <main class="login-form-container">
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit" class="login-button">Login</button>
+                </div>
+                
+                <div class="message" id="loginMessage"></div>
+            </form>
+            
+            <div class="api-message">
+                <p>Note: API is currently under development.</p>
+                <p>A full dashboard will be available soon.</p>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here will be the API authentication call
+            document.getElementById('loginMessage').innerHTML = 
+                'Authentication API is under development. Please try again later.';
+            
+            // Clear form
+            this.reset();
+        });
+    </script>
+</body>
+</html> 
