@@ -621,6 +621,30 @@ header.top-header h1 {
     border-left: 4px solid var(--accent-color);
 }
 
+/* Стили для кнопки контакта внизу страницы резюме */
+.bottom-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.bottom-contact .cta-button {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.bottom-contact .cta-button:hover {
+    background-color: #0062b0;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
     .hero {
@@ -684,6 +708,15 @@ header.top-header h1 {
     .contact-container {
         flex-direction: column;
     }
+    
+    .bottom-contact {
+        margin-top: 30px;
+    }
+    
+    .bottom-contact .cta-button {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -715,5 +748,11 @@ header.top-header h1 {
     
     .lang-btn {
         padding: 5px 10px;
+    }
+    
+    .bottom-contact .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+        width: 80%;
     }
 } 

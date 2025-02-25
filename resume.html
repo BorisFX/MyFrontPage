@@ -12,10 +12,6 @@
         <header class="top-header">
             <a href="index.html" class="back-button">← Back to Home</a>
             <h1 id="page-title">CV</h1>
-            <div class="top-navigation">
-                <a href="login.html" class="nav-button">Login</a>
-                <a href="contact.html" class="nav-button">Contact</a>
-            </div>
             <div class="language-switcher">
                 <button id="ru-btn" class="lang-btn">RUS</button>
                 <button id="en-btn" class="lang-btn active">ENG</button>
@@ -488,11 +484,15 @@
                     </ul>
                 </section>
             </div>
+            
+            <!-- Добавлена кнопка контакта внизу страницы -->
+            <div class="bottom-contact">
+                <a href="contact.html" class="nav-button cta-button">Contact Me</a>
+            </div>
         </main>
     </div>
     
     <script>
-        // Переключение языков
         document.addEventListener('DOMContentLoaded', function() {
             const ruBtn = document.getElementById('ru-btn');
             const enBtn = document.getElementById('en-btn');
@@ -508,6 +508,8 @@
                 enResume.classList.remove('active');
                 pageTitle.textContent = 'Резюме';
                 document.documentElement.lang = 'ru';
+                // Изменяем текст кнопки контакта на русский
+                document.querySelector('.bottom-contact .cta-button').textContent = 'Связаться со мной';
             });
             
             enBtn.addEventListener('click', function() {
@@ -518,6 +520,8 @@
                 ruResume.classList.remove('active');
                 pageTitle.textContent = 'CV';
                 document.documentElement.lang = 'en';
+                // Возвращаем текст кнопки контакта на английский
+                document.querySelector('.bottom-contact .cta-button').textContent = 'Contact Me';
             });
             
             // Выпадающие списки навыков
