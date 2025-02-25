@@ -8,21 +8,45 @@
     <title>Contact - Oleg Matyakubov</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для улучшения выравнивания */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            width: 100%;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #333;
+            text-align: center;
+            flex-grow: 1;
+        }
+        
+        .back-button {
+            flex-shrink: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <a href="index.html" class="back-button">← Back to Home</a>
             <h1>Contact</h1>
+            <!-- Пустой div для симметрии -->
+            <div style="width: 123px;"></div>
         </header>
         
         <main>
             <div class="contact-container">
                 <section class="contact-intro">
                     <h2>Get in Touch</h2>
-                    <p>I'm currently available for freelance work, full-time positions, and consulting opportunities. 
-                    If you have a project that needs a skilled .NET developer or want to discuss potential collaborations, 
-                    feel free to reach out using the form below.</p>
+                    <p>I'm currently working on a project and not actively seeking a new position. However, I'm open to interesting proposals and available for consultations. If you have a project that needs technical expertise in .NET development or want to discuss potential collaborations in the future, feel free to reach out using the form below.</p>
                 </section>
                 
                 <section class="contact-form">
@@ -46,7 +70,7 @@
                         </div>
                         <input type="hidden" name="_subject" value="Новое сообщение с сайта oleg.sbs">
                         <input type="text" name="_gotcha" style="display:none">
-                        <input type="hidden" name="_next" value="https://oleg.sbs/thanks.html">
+                        <input type="hidden" name="_next" value="thanks.html">
                         <button type="submit" class="submit-button">Send Message</button>
                     </form>
                 </section>
@@ -66,7 +90,7 @@
                 
                 if (nextField) {
                     const lang = isRussian ? 'ru' : 'en';
-                    nextField.value = `https://oleg.sbs/thanks.html?lang=${lang}`;
+                    nextField.value = `thanks.html?lang=${lang}`;
                 }
             });
         });
