@@ -1,16 +1,15 @@
-# Персональный сайт Олега Матякубова
+# Personal Website
+Personal website featuring my resume and access to my personal system.
 
-Персональный сайт-портфолио, демонстрирующий мои навыки как Senior .NET Developer.
-
-## Технологии
+## Technologies
 - HTML5
 - CSS3
 - JavaScript
 
-## Структура проекта
-- `index.html` - главная страница
-- `resume.html` - резюме
-- `contact.html` - контактная информация
-- `login.html` - страница входа
-- `css/` - стили
-- `js/` - скрипты JavaScript 
+## Project Structure
+- `index.html` - main page
+- `resume.html` - resume
+- `contact.html` - contact information
+- `login.html` - login page
+- `css/` - styles
+- `js/` - JavaScript scripts
